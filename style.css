@@ -7,12 +7,11 @@
 
 body {
     margin: auto;
-    width: 900px;
     height: 600px;
 }
 
 header {
-    height: 80px;
+    height: 50px;
     padding: 10px;
     background: #4F5D73;
     text-align: center;
@@ -24,6 +23,10 @@ header > h1 {
 }
 
 nav {
+    margin: auto;
+    overflow: hidden;
+    max-width: 900px;
+    min-height: 40px;
     padding: 10px;
     background: #403E4C;
     color: white;
@@ -31,17 +34,24 @@ nav {
 }
 
 nav > a {
+    float: left;
+    display: block;
+    text-align: center;
     color: white;
     text-decoration: none;
     background: #4E8686;
-    padding: 14px 10px;
-    margin-right: 20px;
+    padding: 7px 14px;
+    margin: 5px;
+    margin-right: 10px;
 }
 
 main {
+    clear: both;
+    margin: auto;
+    max-width: 800px;
+    min-height: 600px;
     padding: 30px 20px;
     background: #F0F0F0;
-    min-height: 600px;
 }
 
 main > p {
@@ -51,6 +61,8 @@ main > p {
 }
 
 footer {
+    margin: auto;
+    max-width: 900px;
     height: 50px;
     padding: 10px;
     background: #4F5D73;
