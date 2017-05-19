@@ -33,6 +33,8 @@ nav {
     background: #3C3A46;
     color: white;
     text-align: center;
+    border: 4px solid #4F5D73;
+    border-top: none;
 }
 
 nav > a {
@@ -41,10 +43,11 @@ nav > a {
     text-align: center;
     color: white;
     text-decoration: none;
-    background: #4E8686;
+    background: #4b6c7f;
     padding: 7px 14px;
     margin: 5px;
     margin-right: 10px;
+    border-radius: 8px;
 }
 
 main {
@@ -54,6 +57,8 @@ main {
     min-height: 600px;
     padding: 30px 20px;
     background: #F0F0F0;
+    border-left: 5px solid #4F5D73;
+    border-right: 5px solid #4F5D73;
 }
 
 main a {
@@ -90,6 +95,9 @@ footer {
     background: #4F5D73;
     text-align: right;
     color: white;
+    border: 4px solid #3C3A46;
+    border-top: none;
+    border-radius: 0px 0px 20px 20px;
 }
 
 footer > p {
