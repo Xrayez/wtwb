@@ -7,13 +7,15 @@
 
 body {
     margin: auto;
-    height: 600px;
+    min-height: 600px;
+    background-color: #14161D;
+    background-image: url(img/logo.png);
 }
 
 header {
-    height: 50px;
+    min-height: 50px;
     padding: 10px;
-    background: #4F5D73;
+    background-color: #4F5D73;
     text-align: center;
     color: white;
 }
@@ -25,10 +27,10 @@ header > h1 {
 nav {
     margin: auto;
     overflow: hidden;
-    max-width: 900px;
+    max-width: 1300px;
     min-height: 40px;
     padding: 10px;
-    background: #403E4C;
+    background: #3C3A46;
     color: white;
     text-align: center;
 }
@@ -48,21 +50,41 @@ nav > a {
 main {
     clear: both;
     margin: auto;
-    max-width: 800px;
+    max-width: 1200px;
     min-height: 600px;
     padding: 30px 20px;
     background: #F0F0F0;
 }
 
+main a {
+    color: #4F5D73;
+}
+
+main > h1 {
+    font-size: 24pt;
+    margin-bottom: 0.5em;
+}
+
+main > h2 {
+    font-size: 20pt;
+    margin-bottom: 0.5em;
+}
+
 main > p {
     font-size: 14pt;
+    margin-bottom: 1.5em;
     text-indent: 4ch;
     text-align: justify;
 }
 
+main > ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
 footer {
     margin: auto;
-    max-width: 900px;
+    max-width: 1300px;
     height: 50px;
     padding: 10px;
     background: #4F5D73;
