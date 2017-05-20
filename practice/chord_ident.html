@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Теорія музики</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Практична теорія музики</h1>
+  </header>
+  <nav>
+    <a href=../index.html>Головна</a>
+    <a href=../theory.html>Теорія</a>
+    <a href=../practice.html>Практика</a>
+    <a href=../contacts.html>Контакти</a>
+    <a href=../about.html>Про проект</a>
+  </nav>
+  <main>
+    <h1>Розпізнавання акордів</h1>
+
+    <img src="img/chord_ident/1_maj.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="1_maj"><br>
+
+    <img src="img/chord_ident/2_min.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="2_min"><br>
+
+    <img src="img/chord_ident/3_aug.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="3_aug"><br>
+
+    <img src="img/chord_ident/4_min.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="4_min"><br>
+
+    <img src="img/chord_ident/5_maj.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="5_maj"><br>
+
+    <img src="img/chord_ident/6_maj.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="6_maj"><br>
+
+    <img src="img/chord_ident/7_dim.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="7_dim"><br>
+
+    <img src="img/chord_ident/8_maj.PNG"><br>
+    <label>Введіть акорд: </label>
+    <input type="text" id="8_maj"><br>
+  
+    <button type="button" onclick="check_answers()">Перевірити</button><br>
+
+    <script>
+      function check_answers() {
+
+          var result;
+          var answers = [
+            document.getElementById("1_maj").value,
+            document.getElementById("2_min").value,
+            document.getElementById("3_aug").value,
+            document.getElementById("4_min").value,
+            document.getElementById("5_maj").value,
+            document.getElementById("6_maj").value,
+            document.getElementById("7_dim").value,
+            document.getElementById("8_maj").value
+          ];
+
+          if (answers[0] != "maj" ||
+              answers[1] != "min" ||
+              answers[2] != "aug" ||
+              answers[3] != "min" ||
+              answers[4] != "maj" ||
+              answers[5] != "maj" ||
+              answers[6] != "dim" ||
+              answers[7] != "maj") {
+
+              result = "Деякі відповіді невірні.";
+          }
+          else {
+              result = "Вірно.";
+          }
+          document.getElementById("result").innerHTML = result;
+      }
+     </script>
+
+    <p id="result"></p>
+
+    <p>
+      Малюнки та теоретичний матеріал: <a href="http://www.musictheory.net/">musictheory.net</a>
+    </p>
+  </main>
+  <footer>
+    <p>&copy; 2017 Андрій Дорошенко, КН-24, КНУКіМ</p>
+  </footer>
+</body>
+</html>
