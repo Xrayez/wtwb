@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Теорія музики</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Практична теорія музики</h1>
+  </header>
+  <nav>
+    <a href=../index.html>Головна</a>
+    <a href=../theory.html>Теорія</a>
+    <a href=../practice.html>Практика</a>
+    <a href=../contacts.html>Контакти</a>
+    <a href=../about.html>Про проект</a>
+  </nav>
+  <main>
+    <h1>Розпізнавання нот</h1>
+
+    <img src="img/notes_ident/dflat.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="db"><br>
+
+    <img src="img/notes_ident/b.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="b"><br>
+
+    <img src="img/notes_ident/d.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="d"><br>
+
+    <img src="img/notes_ident/a.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="a"><br>
+
+    <img src="img/notes_ident/f.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="f"><br>
+
+    <img src="img/notes_ident/gflat.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="gb"><br>
+
+    <img src="img/notes_ident/fsharp.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="fs"><br>
+
+    <img src="img/notes_ident/fflat.PNG"><br>
+    <label>Введіть назву ноти: </label>
+    <input type="text" id="fb"><br>
+  
+    <button type="button" onclick="check_answers()">Перевірити</button><br>
+
+    <script>
+      function check_answers() {
+
+          var result;
+          var answers = [
+            document.getElementById("db").value,
+            document.getElementById("b").value,
+            document.getElementById("d").value,
+            document.getElementById("a").value,
+            document.getElementById("f").value,
+            document.getElementById("gb").value,
+            document.getElementById("fs").value,
+            document.getElementById("fb").value
+          ];
+
+          if (answers[0] != "db" ||
+              answers[1] != "b"  ||
+              answers[2] != "d"  ||
+              answers[3] != "a"  ||
+              answers[4] != "f"  ||
+              answers[5] != "gb" ||
+              answers[6] != "f#" ||
+              answers[7] != "fb") {
+
+              result = "Деякі відповіді невірні.";
+          }
+          else {
+              result = "Вірно.";
+          }
+          document.getElementById("result").innerHTML = result;
+      }
+     </script>
+
+    <p id="result"></p>
+
+    <p>
+      Малюнки та теоретичний матеріал: <a href="http://www.musictheory.net/">musictheory.net</a>
+    </p>
+  </main>
+  <footer>
+    <p>&copy; 2017 Андрій Дорошенко, КН-24, КНУКіМ</p>
+  </footer>
+</body>
+</html>

@@ -54,7 +54,7 @@ nav {
 nav > a {
     float: left;
     display: block;
-    width: 100px;
+    width: 217px;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -109,6 +109,19 @@ main > ul {
 main > img {
     max-width: 100%;
     max-height: 100%;
+    margin: 10px;
+}
+
+main > input {
+    width: 2ch;
+}
+
+main > button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-width: 50px;
+    padding: 5px;
+    background: white;
 }
 
 address li {
