@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Теорія музики</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Практична теорія музики</h1>
+  </header>
+  <nav>
+    <a href=../index.html>Головна</a>
+    <a href=../theory.html>Теорія</a>
+    <a href=../practice.html>Практика</a>
+    <a href=../contacts.html>Контакти</a>
+    <a href=../about.html>Про проект</a>
+  </nav>
+  <main>
+    <h1>Розпізнавання інтервалів</h1>
+
+    <img src="img/interval_ident/A2.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="A2"><br>
+
+    <img src="img/interval_ident/d3.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="d3"><br>
+
+    <img src="img/interval_ident/P5.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="P5"><br>
+
+    <img src="img/interval_ident/m7.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="m7"><br>
+
+    <img src="img/interval_ident/A3.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="A3"><br>
+
+    <img src="img/interval_ident/m2.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="m2"><br>
+
+    <img src="img/interval_ident/d5.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="d5"><br>
+
+    <img src="img/interval_ident/A3.PNG"><br>
+    <label>Введіть інтервал: </label>
+    <input type="text" id="A3"><br>
+  
+    <button type="button" onclick="check_answers()">Перевірити</button><br>
+
+    <script>
+      function check_answers() {
+
+          var result;
+          var answers = [
+            document.getElementById("A2").value,
+            document.getElementById("d3").value,
+            document.getElementById("P5").value,
+            document.getElementById("m7").value,
+            document.getElementById("A3").value,
+            document.getElementById("m2").value,
+            document.getElementById("d5").value,
+            document.getElementById("A3").value
+          ];
+
+          if (answers[0] != "A2" ||
+              answers[1] != "d3" ||
+              answers[2] != "P5" ||
+              answers[3] != "m7" ||
+              answers[4] != "A3" ||
+              answers[5] != "m2" ||
+              answers[6] != "d5" ||
+              answers[7] != "A3") {
+
+              result = "Деякі відповіді невірні.";
+          }
+          else {
+              result = "Вірно.";
+          }
+          document.getElementById("result").innerHTML = result;
+      }
+     </script>
+
+    <p id="result"></p>
+
+    <p>
+      Малюнки та теоретичний матеріал: <a href="http://www.musictheory.net/">musictheory.net</a>
+    </p>
+  </main>
+  <footer>
+    <p>&copy; 2017 Андрій Дорошенко, КН-24, КНУКіМ</p>
+  </footer>
+</body>
+</html>
