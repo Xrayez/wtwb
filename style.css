@@ -57,6 +57,7 @@ nav {
 nav > a {
     float: left;
     display: block;
+    width: 100px;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -65,6 +66,11 @@ nav > a {
     margin: 5px;
     margin-right: 10px;
     border-radius: 8px;
+}
+
+nav > a:hover {
+    background: #6e818c;
+    color: black;
 }
 
 main {
@@ -101,6 +107,30 @@ main > p {
 main > ul {
     list-style: none;
     margin-left: 30px;
+}
+
+.bookmarks {
+    max-width: 400px;
+    margin-left: -20px;
+}
+
+.bookmarks > li {
+    background: #548fb1;
+    margin-bottom: 30px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+}
+
+.bookmarks > li > a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.bookmarks > li:hover {
+    background: #94b9ce;
+    color: black;
 }
 
 footer {
