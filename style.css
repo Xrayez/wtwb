@@ -12,6 +12,8 @@ body {
     background-image: url(img/background.png);
 }
 
+/* Header section =========================================================== */
+
 header {
     margin: auto;
     min-height: 50px;
@@ -37,6 +39,8 @@ header > h1 {
     width: 77px;
     height: 50px;
 }
+
+/* Navigation section ======================================================= */
 
 nav {
     clear: both;
@@ -69,6 +73,8 @@ nav > a:hover {
     background: #6e818c;
     color: black;
 }
+
+/* Main section ============================================================ */
 
 main {
     clear: both;
@@ -124,6 +130,29 @@ main > button {
     background: white;
 }
 
+/* Footer section =========================================================== */
+
+footer {
+    margin: auto;
+    max-width: 1300px;
+    height: 50px;
+    padding: 10px;
+    text-align: right;
+    color: white;
+    border-radius: 8px 8px 20px 20px;
+
+    /* Gradient provided by @_ighosh at uiGradients.com */
+    background: #2980b9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2c3e50, #2980b9);
+    background: linear-gradient(to top, #2c3e50, #2980b9);
+}
+
+footer > p {
+    font-size: 12pt;
+}
+
+/* Contacts ================================================================= */
+
 address li {
     margin-left: 10px;
     margin-bottom: 5px;
@@ -151,6 +180,8 @@ form > input.submit {
     background: white;
 }
 
+/* Links ==================================================================== */
+
 .bookmarks {
     max-width: 400px;
     margin-left: -20px;
@@ -173,23 +204,4 @@ form > input.submit {
 .bookmarks > li:hover {
     background: #94b9ce;
     color: black;
-}
-
-footer {
-    margin: auto;
-    max-width: 1300px;
-    height: 50px;
-    padding: 10px;
-    text-align: right;
-    color: white;
-    border-radius: 8px 8px 20px 20px;
-
-    /* Gradient provided by @_ighosh at uiGradients.com */
-    background: #2980b9;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #2c3e50, #2980b9);
-    background: linear-gradient(to top, #2c3e50, #2980b9);
-}
-
-footer > p {
-    font-size: 12pt;
 }
