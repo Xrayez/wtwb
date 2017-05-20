@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Теорія музики</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Практична теорія музики</h1>
+  </header>
+  <nav>
+    <a href=../index.html>Головна</a>
+    <a href=../theory.html>Теорія</a>
+    <a href=../practice.html>Практика</a>
+    <a href=../contacts.html>Контакти</a>
+    <a href=../about.html>Про проект</a>
+  </nav>
+  <main>
+    <h1>Розпізнавання ключових знаків</h1>
+
+    <img src="img/key_sig_ident/e_major.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="a_major"><br>
+
+    <img src="img/key_sig_ident/cs_minor.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="cs_minor"><br>
+
+    <img src="img/key_sig_ident/b_major.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="b_major"><br>
+
+    <img src="img/key_sig_ident/a_major.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="e_major"><br>
+
+    <img src="img/key_sig_ident/gs_minor.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="gs_minor"><br>
+
+    <img src="img/key_sig_ident/c_major.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="c_major"><br>
+
+    <img src="img/key_sig_ident/b_minor.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="b_minor"><br>
+
+    <img src="img/key_sig_ident/e_minor.PNG"><br>
+    <label>Введіть ноту ключового знаку: </label>
+    <input type="text" id="e_minor"><br>
+  
+    <button type="button" onclick="check_answers()">Перевірити</button><br>
+
+    <script>
+      function check_answers() {
+
+          var result;
+          var answers = [
+            document.getElementById("a_major").value,
+            document.getElementById("cs_minor").value,
+            document.getElementById("b_major").value,
+            document.getElementById("e_major").value,
+            document.getElementById("gs_minor").value,
+            document.getElementById("c_major").value,
+            document.getElementById("b_minor").value,
+            document.getElementById("e_minor").value
+          ];
+
+          if (answers[0] != "e" ||
+              answers[1] != "cs"||
+              answers[2] != "b" ||
+              answers[3] != "a" ||
+              answers[4] != "gs"||
+              answers[5] != "c" ||
+              answers[6] != "b" ||
+              answers[7] != "e") {
+
+              result = "Деякі відповіді невірні.";
+          }
+          else {
+              result = "Вірно.";
+          }
+          document.getElementById("result").innerHTML = result;
+      }
+     </script>
+
+    <p id="result"></p>
+
+    <p>
+      Малюнки та теоретичний матеріал: <a href="http://www.musictheory.net/">musictheory.net</a>
+    </p>
+  </main>
+  <footer>
+    <p>&copy; 2017 Андрій Дорошенко, КН-24, КНУКіМ</p>
+  </footer>
+</body>
+</html>
