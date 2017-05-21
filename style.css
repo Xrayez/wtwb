@@ -79,6 +79,7 @@ nav > a:hover {
 main {
     clear: both;
     margin: auto;
+    display: block;
     max-width: 1200px;
     min-height: 600px;
     padding: 30px 20px;
