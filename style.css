@@ -32,6 +32,11 @@ header > h1 {
     font-size: 24pt;
 }
 
+header > h2 {
+    margin: auto;
+    font-size: 16pt;
+}
+
 .logo {
     margin: auto;
     background-image: url(img/logo.png);
