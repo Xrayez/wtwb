@@ -74,7 +74,7 @@ nav > a:hover {
     color: black;
 }
 
-/* Main section ============================================================ */
+/* Main section ============================================================= */
 
 main {
     clear: both;
@@ -111,6 +111,11 @@ main > p {
 main > ul {
     list-style: none;
     margin-left: 30px;
+}
+
+main > ol {
+    margin-left: 80px;
+    margin-bottom: 2em;
 }
 
 main > img {
